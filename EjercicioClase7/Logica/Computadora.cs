@@ -21,5 +21,12 @@ namespace Logica
             MemoriaRAM = memoriaRAM;
             NombreFabricante = nombreFabricante;
         }
+
+        public override string ObtenerDescripcion()
+        {
+            return $"PC {Modelo} - {Marca} - {DescripcionProcesador} {MemoriaRAM} RAM - {NombreFabricante}";
+        }
+
+
     }
 }

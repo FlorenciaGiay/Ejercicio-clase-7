@@ -21,5 +21,9 @@ namespace Logica
             Pulgadas = pulgadas;
         }
 
+        public override string ObtenerDescripcion()
+        {
+            return (Pulgadas != null) ? $"MONITOR {Marca} - {Modelo} {Pulgadas}" : $"MONITOR {Marca} - {Modelo}";
+        }
     }
 }

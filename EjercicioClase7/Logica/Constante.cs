@@ -13,5 +13,13 @@ namespace Logica
         OchoGB,
         Dieciseis16GB
     }
+
+    public static class Extenciones
+    {
+        public static bool ValidarValorRAM(this string valor)
+        {
+            return Enum.IsDefined(typeof(Memoria), valor);
+        }
+    }
     
 }

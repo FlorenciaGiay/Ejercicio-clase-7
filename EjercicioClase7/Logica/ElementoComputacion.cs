@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class ElementoComputacion
+    public abstract class ElementoComputacion
     {
         public string Modelo { get; set; }
         public string Marca { get; set; }
@@ -14,6 +14,7 @@ namespace Logica
         public string Identificador { get { return $"{Modelo}-{Marca}-{NumeroSerie.ToString()}"; } }
 
 
+        public abstract string ObtenerDescripcion();
 
         
     }
